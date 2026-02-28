@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fbfa;
+  --foreground: #10231b;
+  --portola-primary: #1ea97c;
+  --portola-primary-deep: #0a5c36;
+  --portola-primary-deep-hover: #08482b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(200, 250, 230, 0.75) 0%, rgba(220, 240, 255, 0.75) 100%);
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #f8fffc 0%, #f0f9ff 100%);
+}
+
+.navbar-brand {
+  color: var(--portola-primary-deep);
+}
+
+.btn-portola {
+  background-color: var(--portola-primary);
+  border-color: var(--portola-primary);
+  color: #fff;
+}
+
+.btn-portola:hover {
+  background-color: #188f67;
+  border-color: #188f67;
+}
+
+.badge-settled {
+  background-color: #d1f7e8;
+  color: #0a5c36;
+}
+
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.btn-opaque {
+  background-color: var(--portola-primary-deep);
+  border: 1px solid var(--portola-primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-opaque:hover {
+  background-color: var(--portola-primary-deep-hover);
+  border-color: var(--portola-primary-deep-hover);
+  color: #fff;
+}
